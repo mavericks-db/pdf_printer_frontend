@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"prettier-watch\"",
+    "dev": "concurrently \"next dev\" \"npm run prettier-watch\"",
     "prettier-watch": "onchange \"app/**/*\" -- prettier \"app/**/*.tsx\" --write",
     "build": "next build",
     "start": "next start",
