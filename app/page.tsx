@@ -31,16 +31,20 @@ export default function Home() {
   };
 
   return (
-    <div className='container flex flex-direction-column justify-center items-center'>
+    <div className='container flex flex-col gap-4 lg:flex-row justify-center items-center'>
       <div>
-        <h1 className='text-3xl'>Docsmit.com</h1>
+        <h1 className='text-xl lg:text-3xl'>Docsmit.com</h1>
         <br />
         <h2>
           Send PDFs as USPS mail (Certified, Priority and First Class) as easy
           as email.
         </h2>
       </div>
-      <form onSubmit={(e) => handleSubmit(e)} encType='multipart/form-data'>
+      <form
+        className='w-11/12 lg:w-2/4 m-4 lg:m-1 p-4'
+        onSubmit={(e) => handleSubmit(e)}
+        encType='multipart/form-data'
+      >
         <label htmlFor='title'>Title:</label>
         <input type='text' name='title' id='title' required />
         <label htmlFor='rtnName'>Sender:</label>

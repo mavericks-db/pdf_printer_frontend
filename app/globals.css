@@ -35,10 +35,8 @@ body {
 }
 
 form {
-  width: 50vw;
-  height: 90vh;
+  height: max-content;
   margin: 0 auto;
-  padding: 1rem;
   border: 1px solid rgba(0,0,0,0.4);
   border-radius: 1rem;
   display: flex;
@@ -99,7 +97,6 @@ button:hover {
 }
 
 .details {
-  text-align: center;
   margin: 0 auto;
   padding: 1rem;
   border: 1px solid black;
