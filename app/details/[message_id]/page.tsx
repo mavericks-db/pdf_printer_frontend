@@ -3,6 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import styles from "./messagedetails.module.css";
 
 interface DetailsProps {
   params: {
@@ -43,7 +44,7 @@ const Details: React.FC<DetailsProps> = ({ params }) => {
 
   return (
     <div className='container flex justify-center items-center'>
-      <div className='details flex flex-col items-start'>
+      <div className={`${styles.details} flex flex-col items-center`}>
         <h1 className='text-2xl'>Message Details</h1>
         <br />
         {details &&
@@ -53,7 +54,7 @@ const Details: React.FC<DetailsProps> = ({ params }) => {
             </h3>
           ))}
         <br />
-        <button type='button'>
+        <button type='button' className={styles.btn}>
           <Link href='/'>Home</Link>
         </button>
       </div>

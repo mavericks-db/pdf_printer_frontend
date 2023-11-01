@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import styles from "./loadingbar.module.css";
 
 interface LoadingBarProps {
   loading: Boolean;
@@ -12,7 +13,7 @@ const LoadingBar: React.FC<LoadingBarProps> = ({ loading }) => {
     if (loading) {
       const interval = setInterval(() => {
         setWidth((prevWidth) => {
-          if (prevWidth == 100) {
+          if (prevWidth === 100) {
             clearInterval(interval);
             return 100;
           } else {
@@ -24,8 +25,12 @@ const LoadingBar: React.FC<LoadingBarProps> = ({ loading }) => {
   }, [loading]);
 
   return (
-    <div className={`loading-bar ${loading ? "" : "hidden"}`}>
-      <div ref={barRef} className='bar' style={{ width: `${width}%` }}></div>
+    <div className={`${styles.loadingBar} ${loading ? "" : styles.hidden}`}>
+      <div
+        ref={barRef}
+        className={styles.bar}
+        style={{ width: `${width}%` }}
+      ></div>
     </div>
   );
 };

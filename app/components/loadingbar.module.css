@@ -1,0 +1,20 @@
+.loadingBar {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  height: 30px;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  position: relative;
+}
+
+.bar {
+  width: 0;
+  height: 100%;
+  background-color: #0074d9;
+  transition: width 1s;
+}
+
+.hidden {
+  display: hidden;
+}

@@ -1,0 +1,27 @@
+.details {
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid black;
+  width: 50vw;
+  height: max-content;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+}
+
+
+.btn {
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  width: 25%;
+  align-self: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
