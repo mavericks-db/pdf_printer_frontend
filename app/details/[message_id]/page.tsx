@@ -2,8 +2,8 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import styles from "./messagedetails.module.css";
+import HomeButton from "@/app/components/HomeButton";
 
 interface DetailsProps {
   params: {
@@ -54,9 +54,7 @@ const Details: React.FC<DetailsProps> = ({ params }) => {
             </h3>
           ))}
         <br />
-        <button type='button' className={styles.btn}>
-          <Link href='/'>Home</Link>
-        </button>
+        <HomeButton />
       </div>
     </div>
   );

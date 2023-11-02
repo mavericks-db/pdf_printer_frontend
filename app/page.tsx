@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import LoadingBar from "./components/LoadingBar";
 import Link from "next/link";
