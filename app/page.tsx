@@ -97,7 +97,12 @@ export default function Home() {
             </button>
           </div>
         ) : (
-          <button type='submit'>Submit</button>
+          <button
+            type='submit'
+            style={{ visibility: loading ? "hidden" : "visible" }}
+          >
+            Submit
+          </button>
         )}
       </form>
     </div>
